@@ -1,1 +1,15 @@
-<h1> Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to the Forest Fire Prediction App</h1>
+    <p>Click below to go to the prediction page.</p>
+
+    <a href="{{ url_for('predict_datapoint') }}">
+        <button type="button">Go to Prediction Page</button>
+    </a>
+</body>
+</html>

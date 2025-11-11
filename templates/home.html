@@ -12,11 +12,15 @@
                 <input type="text" name="ISI" placeholder="ISI" required="required"/> <br>
                 <input type="text" name="Classes" placeholder="Classes" required="required"/> <br>
                 <input type="text" name="Region" placeholder="Region" required="required"/> <br>
-                <button type="submit" class="btn btn-primary btn-block btn-large"> Predict</button>                
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>                
             </form>
-            <h2>
-                THE FWI prediction is {{results}}
-            </h2>
+
+            <h2>THE FWI prediction is {{results}}</h2>
+
+            <!-- 🟢 Add this link button to go back to index.html -->
+            <a href="{{ url_for('index') }}">
+                <button type="button">Back to Home Page</button>
+            </a>
         </div>
     </body>
 </html>
